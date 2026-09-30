@@ -25,8 +25,8 @@ En revanche, **tout le reste du texte du jeu, notamment les dialogues, est tradu
 
 Vous devez disposer de vos propres images des deux versions suivantes du jeu :
 
-- 🇺🇸 **GZLE01 — version US, révision 0**
-- 🇪🇺 **GZLP01 — version PAL**
+- 🇺🇸 **GZLE01 - version US, révision 0**
+- 🇪🇺 **GZLP01 - version PAL**
 
 Les images peuvent être au format :
 
