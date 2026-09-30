@@ -5,6 +5,82 @@ Source fork of [BlueWake](https://github.com/chrissotraidis/bluewake), based on 
 The app and build scripts retain the BlueWake name and bundle identifier. Upstream license and
 credits are preserved below and in [RIGHTS_AND_LICENSES.md](RIGHTS_AND_LICENSES.md).
 
+Ce fork de **Zelda: Wind Waker Recomp** permet d'extraire la traduction française de la version PAL **GZLP01** de *The Legend of Zelda: The Wind Waker* et de l'intégrer à la version US **GZLE01**.
+
+L'objectif est de conserver la **signature de la ROM US GZLE01**, nécessaire au bon fonctionnement de **Wind Waker Recomp**, tout en profitant de la majorité des textes de la version française.
+
+## État de la traduction
+
+La traduction n'est actuellement **pas complète**.
+
+Les éléments suivants restent en anglais :
+
+- Certaines parties des menus du jeu
+- Les noms des items
+- Les noms des îles
+
+En revanche, **tout le reste du texte du jeu, notamment les dialogues, est traduit en français**.
+
+## Prérequis
+
+Vous devez disposer de vos propres images des deux versions suivantes du jeu :
+
+- 🇺🇸 **GZLE01 — version US, révision 0**
+- 🇪🇺 **GZLP01 — version PAL**
+
+Les images peuvent être au format :
+
+- `.iso`
+- `.gcm`
+
+> **Important :** les images du jeu ne sont pas fournies avec ce projet.
+
+## Génération de l'image française
+
+Depuis le dossier du projet, exécutez :
+
+```bash
+python pal_french.py "C:\chemin\USA.iso" "C:\chemin\PAL.iso" "C:\chemin\WindWaker-FR.iso"
+```
+
+Le script utilise :
+
+1. L'image US **GZLE01 révision 0** comme base.
+2. L'image PAL **GZLP01** comme source pour récupérer la traduction française.
+3. `WindWaker-FR.iso` comme fichier de sortie.
+
+### Utiliser un fichier BMG spécifique
+
+Il est également possible d'indiquer manuellement le fichier BMG PAL à utiliser avec l'option `--pal-bmg` :
+
+```bash
+python pal_french.py "C:\chemin\USA.iso" "C:\chemin\PAL.iso" "C:\chemin\WindWaker-FR.iso" --pal-bmg zel_XX.bmg
+```
+
+Remplacez `zel_XX.bmg` par le fichier BMG souhaité.
+
+## Résultat
+
+Le script génère une image basée sur **GZLE01**, ce qui permet de conserver la signature attendue par **Wind Waker Recomp**, tout en intégrant les textes français extraits de **GZLP01**.
+
+### Traduit en français
+
+- Les dialogues
+- Les textes narratifs
+- La majorité des textes du jeu
+
+### Reste en anglais
+
+- Certaines parties des menus
+- Les items
+- Les noms des îles
+
+## Avertissement
+
+Ce projet ne fournit **aucune ROM ni image du jeu**.
+
+Vous devez fournir vous-même les images **GZLE01 révision 0** et **GZLP01** nécessaires au fonctionnement du script.
+
 <p align="center">
   <strong>The Legend of Zelda: The Wind Waker, running natively on Windows, Mac, iPhone and iPad.</strong><br>
   A static recompilation of the GameCube original, with Direct3D 12 and Metal rendering, Smooth Motion
