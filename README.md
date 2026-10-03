@@ -40,7 +40,7 @@ Les images peuvent être au format :
 Depuis le dossier du projet, exécutez :
 
 ```bash
-python pal_french.py "C:\chemin\USA.iso" "C:\chemin\PAL.iso" "C:\chemin\WindWaker-FR.iso"
+python script/pal_french.py "C:\chemin\USA.iso" "C:\chemin\PAL.iso" "C:\chemin\WindWaker-FR.iso"
 ```
 
 Le script utilise :
@@ -54,7 +54,7 @@ Le script utilise :
 Il est également possible d'indiquer manuellement le fichier BMG PAL à utiliser avec l'option `--pal-bmg` :
 
 ```bash
-python pal_french.py "C:\chemin\USA.iso" "C:\chemin\PAL.iso" "C:\chemin\WindWaker-FR.iso" --pal-bmg zel_XX.bmg
+python script/pal_french.py "C:\chemin\USA.iso" "C:\chemin\PAL.iso" "C:\chemin\WindWaker-FR.iso" --pal-bmg zel_XX.bmg
 ```
 
 Remplacez `zel_XX.bmg` par le fichier BMG souhaité.
