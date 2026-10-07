@@ -65,11 +65,8 @@ Le script génère une image basée sur **GZLE01**, ce qui permet de conserver l
 
 - Les dialogues
 - Les textes narratifs
-- La majorité des textes du jeu
-
-### Reste en anglais
-
-- Certaines parties des menus
+- La majorité des textes du jeu.
+- Les menus du jeu
 - Les items
 - Les noms des îles
 
