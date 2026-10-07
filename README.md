@@ -16,8 +16,6 @@ La traduction n'est actuellement **pas complète**.
 Les éléments suivants restent en anglais :
 
 - Certaines parties des menus du jeu
-- Les noms des items
-- Les noms des îles
 
 En revanche, **tout le reste du texte du jeu, notamment les dialogues, est traduit en français**.
 
